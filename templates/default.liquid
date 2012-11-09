@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link type="text/css" rel="stylesheet" href="/css/style.css" />
+		<script type="text/javascript" src="/js/scripts.js"></script>
+	</head>	
+	<body>
+		<div id="navigation">
+			<a href="/">home</a>
+			<br class="clear: both" />
+		</div>
+		<div id="left">
+
+			<ul id="side-links">
+				{% for n in navigation %}
+				<li><a href="{{n.permalink}}">{{n.title}}</a></li>	
+				{% endfor %}	
+			</ul>
+		</div>	
+		<div id="right">
+			<h1>{{title}}</h1>
+			{{body}}
+		</div>
+	</body>
+
+
+</html>
+<!--Powered by bonsai : tinytree.info-->

@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=ABeeZee:400,400italic);
+
+*{margin: 0px; padding: 0px; font-family: 'ABeeZee', sans-serif;}
+#navigation{
+	background-color: #D8D8D8;
+	margin: 0px;
+	padding: 4px;
+
+}
+
+
+#navigation a:first-child{
+	margin-left: 40px;
+}
+
+#navigation a{
+	color: black;
+	text-decoration: none;
+	display: inline;
+	margin-left: 10px;
+	float: left;
+
+}
+
+
+#searchbar{
+	float: right;
+	margin-right: 40px;
+}
+
+#left{
+	margin-left: 40px;
+	margin-top: 20px;
+	float: left;
+	display: inline; 
+	width: 100px;
+	border-right: 1px dotted #888888;
+	height: 300px;
+
+}
+#right{
+	margin-right: 40px;
+	margin-left: 10px;
+	margin-top: 20px;
+	width: auto;
+	float: left;
+	display: inline;
+	text-align: justify; 
+}
+
+#side-links li{
+	list-style-type: none;
+}
+
+
+p{
+	margin-bottom: 10px;
+}
+
+
+code{
+	font-family: monospace;
+}

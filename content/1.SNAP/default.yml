@@ -1,0 +1,25 @@
+title:
+  SNAP
+body: |
+  <p>SNAP stands for <b>S</b>hared <b>N</b>amespace <b>A</b>pplication
+  <b>P</b>rogramming. It's a small PHP utility that I wrote that allows you to 
+  write functions in PHP and export them to javascript.</p> 
+  <p>Essentially, it handles all of the boilerplate javascript required to use an ajax call to 
+  invoke a function. Consider the following PHP:</p> 
+     
+      function getUserInfo($username){
+         // do some server side operations
+      }
+  
+  You can make the code callable on the client side with the following php:
+
+      // create a new module.
+      $module = new SNAPModule("SNAP");      
+      
+
+      // register the function bar() in bar.php as foo.
+      $module->registerFunction("foo", "bar", "bar.php");      
+      
+
+      // write JS to the page.
+      SNAPTrigger($module);     
