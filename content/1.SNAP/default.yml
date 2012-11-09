@@ -7,11 +7,16 @@ body: |
   <p>Essentially, it handles all of the boilerplate javascript required to use an ajax call to 
   invoke a function. Consider the following PHP:</p> 
      
+      // file name: bar.php
+
       function getUserInfo($username){
          // do some server side operations
       }
   
   You can make the code callable on the client side with the following php:
+
+
+      // file name: foo.js.php
 
       // create a new module.
       $module = new SNAPModule("SNAP");      
@@ -23,3 +28,11 @@ body: |
 
       // write JS to the page.
       SNAPTrigger($module);     
+      
+      
+
+  You can then call the function client side by including the script:
+
+      // file name: index.html
+
+      <script type="text/javascript" src="foo.js.php?mode=js"></script>
