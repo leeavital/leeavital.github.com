@@ -30,7 +30,8 @@
   display: inline;
   width: 100px;
   border-right: 1px dotted #888888;
-  height: 300px; }
+  height: 300px; 
+  font-size: 14px;}
 
 #right {
   margin-right: 40px;
@@ -42,7 +43,14 @@
   text-align: justify; }
 
 #side-links li {
-  list-style-type: none; }
+  list-style-type: none; 
+  margin-bottom: 10px;}
+
+#side-links li:after{
+	display: block;
+	text-align: center;
+	content: "...";
+}
 
 p {
   margin-bottom: 10px; }
