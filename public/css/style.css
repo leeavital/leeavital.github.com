@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=ABeeZee:400,400italic);
 * {
   margin: 0px;
-  padding: 0px;
-  font-family: 'ABeeZee', sans-serif; }
+  padding: 0px; }
+
+body{
+font-family: 'ABeeZee', sans-serif;}
 
 #navigation {
   background-color: #D8D8D8;
