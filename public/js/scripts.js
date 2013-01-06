@@ -40,16 +40,41 @@ var HIGHLIGHTER = {};
 HIGHLIGHTER.doErlang = function(){
 	
 	var erlangLine = function(s){
-		console.log(s);	
-		if( /%/.test(s) ){
-			
-			return '<div style="color: blue">' + s + '</div>';
+		
+		rexp = '';
+		rexp += '(%.*)';
+		rexp += '|' + '(\\))';
+		rexp += '|' + '(\\))';
+		rexp += '|' + '[a-zA-Z]*';
+		rexp += '|' + '(.)';
+		rexp = new RegExp(rexp) + 'g';
 
+		console.log(rexp);
+
+		tokens = s.match(rexp);	
+		console.log(tokens);	
+		line = '';
+	
+
+		for(i in tokens){
+			token = tokens[i];	
+			if(/%.*/.test(token)){
+				line += '<span style="color: blue">' + token + '</span>' ;
+			}else if(/case|of|if|when/.test(token)){
+				line += '<span style="color: yellowgreen">' + token + '</span>'
+			}else if(token){
+				line += '<span>' + token + '</span>';
+			}
+
+
+					
 		}
+
+
+
+
+		return '<div>' + line + '</div>';
 				
-				
-				
-		return '<div>' + s + '</div>';			
 			
 	}
 	
