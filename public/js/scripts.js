@@ -18,7 +18,65 @@ window.onload = function(){
 		}
 
 	}
-
+	
+	window.doHighlights();
 	window.onresize(); // initial dimensioning
 }
 
+
+
+function doHighlights(){
+	
+	HIGHLIGHTER.doErlang();
+
+}
+
+
+
+
+var HIGHLIGHTER = {};
+
+
+HIGHLIGHTER.doErlang = function(){
+	
+	var erlangLine = function(s){
+		console.log(s);	
+		if( /%/.test(s) ){
+			
+			return '<div style="color: blue">' + s + '</div>';
+
+		}
+				
+				
+				
+		return '<div>' + s + '</div>';			
+			
+	}
+	
+	var erlangSection = function(text){ 
+		lines =text.split('\n');
+		highlightedText = '';
+		for(l in lines){
+			highlightedText += erlangLine(lines[l]);
+			
+		}
+
+		return highlightedText;
+				
+			
+	}
+
+	var erlangTags = document.getElementsByClassName("highlight-erlang");
+	
+	for(var i = 0; i < erlangTags.length; i++){
+		
+		var tag = erlangTags[i];	
+		tag.innerHTML = erlangSection(tag.innerHTML);	
+
+		
+	}
+		
+
+
+
+}
