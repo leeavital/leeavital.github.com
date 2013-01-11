@@ -5,16 +5,14 @@ window.onload = function(){
 
 	window.onresize = function(){
 				
-		winWidth = window.innerWidth;
+		winWidth = document.body.offsetWidth;
 		if(winWidth > 400){
 			left.style.width = '100px';
-			right.style.width = (winWidth - 220) + 'px';		
+			right.style.width = (winWidth - 200) + 'px';		
 			left.style.display = 'inline';
-			search.style.display = 'inline';
 		}else{	
 			left.style.display = 'none';
-			search.style.display = 'none';
-			right.style.width = (winWidth - 40) + 'px';			
+			right.style.width =  '90%';			
 		}
 
 	}
