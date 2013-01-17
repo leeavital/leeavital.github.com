@@ -1,15 +1,29 @@
-body:  
-  <p>Hi, my name is Lee Avital and I'm a second year computer
-  science at the <a href="http://rit.edu" title="Rochester Institute 
-  of Technology">Rochester Institute of Technology</a>. My primary interests
-  are in language theory/design and web development. </p>
-  
-  <p>I currently work at the <a href="http://ntid.rit.edu" title="NTID">National
-  Technical Institute for the Deaf</a> where I write and maintain educational web
-  based software. </p> 
-  
+title: About Me
 
-  
+body: 
+   Hi, my name is <b>Lee Avital</b> and I'm a second year computer science
+   student at the <a href="http://rit.edu"> Rochester Institute of
+   Technology</a>. 
 
-title:
-  Lee Avital
+
+   I've done a lot of work in <b>web development</b> &mdash; writing
+   large javascript applications with backends in everything from django
+   on a linux box to ASP Classic on a windows server.
+
+
+   I've worked as a web developer at the <a href="http://ntid.rit.edu">
+   National Technical Institute for the Deaf</a> working on web-based 
+   tools to enhance the classroom experience for both hearing and 
+   non-hearing students.
+
+
+   I've also done independent work starting with 
+   <a href="/Ethereal-Commerce">Ethereal Commerce</a> and more recently
+   with <a href="/SNAP">SNAP</a>
+
+   
+   I'm also very interested in programming languages &mdash; their designs,
+   their implementations and their applications. Right now, I'm learning
+   <a href="http://en.wikipedia.org/wiki/Erlang_%28programming_language%29">
+   Erlang</a>, a neat conncurency based programming language.
+   
