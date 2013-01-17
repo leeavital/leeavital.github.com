@@ -1,3 +1,0 @@
-all:
-	pdflatex resume.tex
-
