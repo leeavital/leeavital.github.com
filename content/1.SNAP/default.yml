@@ -5,8 +5,8 @@ github: http://github.com/leeavital/SNAP
 
 body: |
    SNAP stands for 
-   <b>s</b>hared <b>n</b>amespace <a>a</a>pplication 
-   <a>p</a>rogramming. It's a small PHP utility I wrote that allows
+   <b>s</b>hared <b>n</b>amespace <b>a</b>pplication 
+   <b>p</b>rogramming. It's a small PHP utility I wrote that allows
    you to write functions in PHP and wrap them up into javascript modules.
    This allows you to essentially call server side code from the browser
    without fussing with AJAX.
