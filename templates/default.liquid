@@ -8,6 +8,7 @@
 	<body>
 		<div id="navigation">
 			<a href="/">home</a>
+            <a href="/resume/static/resume.pdf">resume</a>
 			<br class="clear: both" />
 		</div>
 		<div id="left">
@@ -20,6 +21,12 @@
 		</div>	
 		<div id="right">
 			<h1>{{title}}</h1>
+            {% if github %}
+               <br /> 
+               <a href="{{github}}">On Github</a>
+               <br /> 
+               <br />
+            {% endif %}
 			{{body}}
 		</div>
 	</body>
