@@ -1,0 +1,13 @@
+title: This Website
+
+github: https://github.com/leeavital/personal-site
+
+body: |
+   This site was written using the delightful 
+   <a href="http://tinytree.info">bonsai static site generator</a>
+   by <a href="http://twitter.com/benschwarz">Ben Shwarz</a>. A great
+   tool build in ruby that lets me write my content in YAML files
+   and my templates in liquid.
+
+   It also features a bit of javascript based responsive design, so go ahead and resize
+   that screen! (if you're feeling curious, check out the page source)
