@@ -51,7 +51,6 @@ font-family: 'ABeeZee', sans-serif;}
 #side-links li:after{
 	display: block;
 	text-align: center;
-	content: "...";
 }
 
 p {
