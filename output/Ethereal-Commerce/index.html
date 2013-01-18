@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ethereal Commerce</title>
+		<link type="text/css" rel="stylesheet" href="/css/style.css" />
+		<script type="text/javascript" src="/js/scripts.js"></script>
+	</head>	
+	<body>
+		<div id="navigation">
+			<a href="/">home</a>
+            <a href="/resume/static/resume.pdf">resume</a>
+			<br class="clear: both" />
+		</div>
+		<div id="left">
+
+			<ul id="side-links">
+				
+				<li> <a href="/SNAP/">SNAP</a></li>	
+                <br />
+                
+				<li> <a href="/Erlang-Chat/">Erlang Chat</a></li>	
+                <br />
+                
+				<li> <a href="/This-Site/">This Website</a></li>	
+                <br />
+                
+				<li> <a href="/Ethereal-Commerce/">Ethereal Commerce</a></li>	
+                <br />
+                
+				<li> <a href="/Lazy-JSON/">Lazy JSON.d</a></li>	
+                <br />
+                	
+			</ul>
+		</div>	
+		<div id="right">
+			<h1>Ethereal Commerce</h1>
+            
+               <br /> 
+               <a href="https://github.com/leeavital/ethereal-commerce">On Github</a>
+               <br /> 
+               <br />
+            
+			<p>Ethereal Commerce is the first large scale PHP framnework I every developed. It&#8217;s a framework for creating themable ecommerce system with a admin dashboard. It&#8217;s based heavily on (older versions) of wordpress &#8212; in other words, there are global functions everywhere!</p>
+
+<p>When I first got into PHP I was really into wordpress, so I wanted to build a themable system just like wordpress.</p>
+
+<p>Take a look at a basic template file:</p>
+<pre>
+&lt;?php get_header(); ?&gt;
+
+&lt;?php while ($epc_query-&gt;hasNext()): ?&gt;
+
+
+&lt;a href="&lt;?= p_href(); ?&gt;"&gt;
+&lt;?php p_title(); ?&gt; &lt;br /&gt;
+&lt;/a&gt;
+&lt;?php p_description(); ?&gt; &lt;br /&gt;
+&lt;?php p_controls(); ?&gt; &lt;br /&gt;
+
+&lt;?php p_category(); ?&gt;
+
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;?php $epc_query-&gt;next(); ?&gt;
+&lt;?php endwhile ?&gt;
+
+&lt;?php get_footer(); ?&gt;
+</pre>
+		</div>
+	</body>
+
+
+</html>
+<!--Powered by bonsai : tinytree.info-->
