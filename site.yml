@@ -1,8 +1,22 @@
 # The key value pairs found below are available within the templates.
 # {{site_name}}, {{url}}, {{copyright}} and {{analytics_code}}
 
+<<<<<<< HEAD
 :site_name: Lee Avital 
 #:url: http://people.rit.edu/~lja5234
 :url: http://localhost:5000 
+=======
+# use this on gibson
+# :site_name: http://people.rit.edu/~lja5234
+# :url: http://people.rit.edu/~lja5234
+# #:site_name: http://localhost:5000
+# :copyright: 2013
+# :analytics_code: UA-00000000-0
+
+# use this on localhost
+:site_name: localhost:5000
+:url:  http://localhost:5000
+# :site_name: http://localhost:5000
+>>>>>>> 8d0de337964e6fc2136f9f9afa4dc1402e2e26f1
 :copyright: 2013
 :analytics_code: UA-00000000-0
