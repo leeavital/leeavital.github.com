@@ -9,5 +9,9 @@ body: |
    tool build in ruby that lets me write my content in YAML files
    and my templates in liquid.
 
-   It also features a bit of javascript based responsive design, so go ahead and resize
-   that screen! (if you're feeling curious, check out the page source)
+
+   It also autocompiles SASS and LESS automatically so I implemented some
+   responsive design with SASS.  Go ahead
+   and resize that page!
+
+
