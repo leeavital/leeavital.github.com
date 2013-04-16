@@ -1,0 +1,58 @@
+title:
+  Erlang Chat 
+body: |
+  I've been meaning to learn erlang for a while now---a lot of its features appeal to me. 
+  I hope to get better a functional programming, and erlang is a functional programming language. It 
+  has a lot of the attractive features that other functional languages have--namely pattern matching. 
+
+  Erlang is often described as a "concurrency oriented language". What I take this to mean, is that different
+  types of computation are split into different <i>concurrent</i> processes.
+
+  So, After playing around with some project euler problems to get my feet wet, I decided to write a small
+  multi-client chat program to learn more about how Erlang handles threads and concurrency. 
+
+
+  The first thing to do was familiarize my self with Erlang's network bindings and the gen_tcp library. I wrote a small echo 
+  server using this excellent tutorial. The two most important functions I used were:
+
+  <code>gen_tcp:listen(Port, Options)</code> 
+  Which will return a handle to a server socket for the given port with the given options. The options
+  you can use are explained in the tutorial above.
+  
+  <code>gen_tcp:accept(ServerSocket)</code>
+  Which will accept a connection to a server socket as returned by <code>gen_tcp:listen()</code>
+
+
+
+  With these two functions I was able to write the main server loop
+
+  <pre>
+  
+  
+  start(Port) ->
+    {ok, ServerSocket} = gen_tcp:accept(Port, ?TCP_OPTIONS),
+    loop(ServerSocket). 
+
+  loop(ServerSocket) ->
+    case gen_tcp:accept(ServerSocket) of 
+      {ok, Client} 
+        % do something with the client
+        loop(ServerSocket).
+      _ ->
+        % we'll ignore any error
+        loop(ServerSocket)
+  
+  
+  </pre>
+ 
+ 
+  
+  For most erlang processes (especially in this example), the processes state is stored in a tail recursive function usually 
+  called <code>loop</code>. In this case, <code>gen_tcp:accept</code> waits for a connecting socket, does something with it
+  and then loops again -- the state that the server holds is the ServerSocket.
+
+  
+    
+
+
+ 
