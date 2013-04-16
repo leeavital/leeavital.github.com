@@ -46,6 +46,18 @@
             {% endif %}
 			{{body}}
 		</div>
+  
+
+    <br style="clear: both" />
+
+		<ul id="bottom-links">
+			{% for n in navigation %}
+			<li> <a href="{{url}}{{n.permalink}}">{{n.title}}</a></li>	
+              <br />
+                {% endfor %}	
+		</ul>
+
+
 	</body>
 
 

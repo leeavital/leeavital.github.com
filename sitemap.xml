@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://leeavital.github.io</loc>
+    <loc>http://localhost:5000</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/Ethereal-Commerce/</loc>
+    <loc>http://localhost:5000/Ethereal-Commerce/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/SNAP/</loc>
+    <loc>http://localhost:5000/SNAP/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/contact/</loc>
+    <loc>http://localhost:5000/contact/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/Erlang-Chat/</loc>
+    <loc>http://localhost:5000/Erlang-Chat/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/resume/</loc>
+    <loc>http://localhost:5000/resume/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/This-Site/</loc>
+    <loc>http://localhost:5000/This-Site/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/Lazy-JSON/</loc>
+    <loc>http://localhost:5000/Lazy-JSON/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
