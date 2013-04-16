@@ -15,6 +15,10 @@ $cutoff: 600px
    -webkit-transition: width .3s ease-in
    -moz-transition: width .3s ease-in
 
+   transition: height .3s ease-in
+   -webkit-transition: height .3s ease-in
+   -moz-transition: height .3s ease-in
+
 
 *
    margin: 0px
@@ -69,10 +73,26 @@ p
    width: $right-width
 
 
+
+
 //    :after
 //       content: "."
 // 	  clear: both
 // 	  visibility: hidden
+
+
+
+
+
+#bottom-links
+   @include sizetransition
+   overflow: hidden
+   height: 0px
+   text-align: center
+
+   @media screen and (max-width: $cutoff)
+      height: auto 
+      border-top: 1px solid $header-color
 
 
 
