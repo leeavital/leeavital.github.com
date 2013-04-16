@@ -43,7 +43,7 @@ p {
   margin-left: 2%;
   margin-top: 20px;
   border-right: 1px dotted #888888; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
     #left {
       width: 0px;
       border-right: none; } }
@@ -72,7 +72,7 @@ p {
   overflow: hidden;
   height: 0px;
   text-align: center; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 400px) {
     #bottom-links {
       height: auto;
       border-top: 1px solid #d8d8d8; } }
