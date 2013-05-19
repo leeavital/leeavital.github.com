@@ -1,0 +1,58 @@
+title: Scrabb.li
+github: http://github.com/leeavital/scrabble.li
+
+body: |
+  ## Background
+
+  This summer the society for software engineers decided to run 
+  [scrabb.li](http://scrabb.li) --- a neat competition where everyone 
+  writes a scrabble solver in their language of choice and pits them 
+  against eachother. Most everyone is taking this as an opportunity to 
+  learn a strange new language or environment, and I decided to brush up 
+  on D (one of my favorite languages, which 
+  [I've written about before](../Lazy-JSON))
+
+   
+  <br />
+    
+  ## The Algorithm
+  So far, I've read two papers on scrabble solvers. 
+  [This one](http://www.cs.cmu.edu%2Fafs%2Fcs%2Facademic%2Fclass%2F15451-s06%2Fwww%2Flectures%2Fscrabble.pdf)
+  describes a very fast algorithm to generate moves using a combination of
+  a [directed acyclic word graph](http://en.wikipedia.org/wiki/DAWG) 
+  (DAWG) and non-deterministic generation.
+ 
+   
+  [This second one](http://www.ericsink.com/downloads/faster-scrabble-gordon.pdf) 
+  builds off the original and intruduces a 
+  [GADDAG](http://en.wikipedia.org/wiki/GADDAG) --- a variation on a DAWG
+  that holds the computes and stores every revesed-prefix of a word. This 
+  eliminates the non-determinism found in the original algorithm.
+ 
+   
+
+  I decided to go with the slower (though still extremely fast) algorithm since it was 
+  easier to understand. I plan to use the GADDAG algorithm later this summer.
+   
+   
+  <br />
+   
+  ## Implementation
+
+  You can find my (still incomplete) implementation 
+  [on github](http://github.com/leeavital/scrabble.li)
+   
+
+  <br />
+
+  ## On the D Language
+  
+  Along the way, I've been finding cool/useful features of D that I thought
+  I would share:
+
+  * List comprehensions
+   <br />
+   <pre>
+    asdfadf
+   </pre>
+  * Operator overloading
