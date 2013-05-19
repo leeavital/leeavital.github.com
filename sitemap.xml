@@ -6,17 +6,17 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/Ethereal-Commerce/</loc>
-    <lastmod>2013-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>http://leeavital.github.io/SNAP/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/contact/</loc>
+    <loc>http://leeavital.github.io/This-Site/</loc>
+    <lastmod>2013-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://leeavital.github.io/Lazy-JSON/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -31,12 +31,17 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/This-Site/</loc>
+    <loc>http://leeavital.github.io/contact/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://leeavital.github.io/Lazy-JSON/</loc>
+    <loc>http://leeavital.github.io/Scrabb-Li/</loc>
+    <lastmod>2013-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://leeavital.github.io/Ethereal-Commerce/</loc>
     <lastmod>2013-04-16</lastmod>
     <changefreq>monthly</changefreq>
   </url>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lee Avital | Scrabb.li</title>
+		<link type="text/css" rel="stylesheet" href="http://leeavital.github.io/css/style.css" />
+		 	
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+         <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-37913572-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+               var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+               ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+         </script>
+    
+    </head>	
+	<body>
+		<div id="navigation">
+			<a href="http://leeavital.github.io/">home</a>
+            <a href="http://leeavital.github.io/resume/static/resume.pdf">resume</a>
+            <a href="http://leeavital.github.io/contact">contact</a>
+			<br class="clear: both" />
+		</div>
+		<div id="left">
+
+			<ul id="side-links">
+				
+				<li> <a href="http://leeavital.github.io/SNAP/">SNAP</a></li>	
+                <br />
+                
+				<li> <a href="http://leeavital.github.io/Erlang-Chat/">Erlang Chat</a></li>	
+                <br />
+                
+				<li> <a href="http://leeavital.github.io/This-Site/">This Website</a></li>	
+                <br />
+                
+				<li> <a href="http://leeavital.github.io/Ethereal-Commerce/">Ethereal Commerce</a></li>	
+                <br />
+                
+				<li> <a href="http://leeavital.github.io/Lazy-JSON/">Lazy JSON.d</a></li>	
+                <br />
+                
+				<li> <a href="http://leeavital.github.io/Scrabb-Li/">Scrabb.li</a></li>	
+                <br />
+                	
+			</ul>
+		</div>	
+		<div id="right">
+			<h1>Scrabb.li</h1>
+            
+               <br /> 
+               <a href="http://github.com/leeavital/scrabble.li">On Github</a>
+               <br /> 
+               <br />
+            
+			<h2 id='background'>Background</h2>
+
+<p>This summer the society for software engineers decided to run <a href='http://scrabb.li'>scrabb.li</a> &#8212; a neat competition where everyone writes a scrabble solver in their language of choice and pits them against eachother. Most everyone is taking this as an opportunity to learn a strange new language or environment, and I decided to brush up on D (one of my favorite languages, which <a href='../Lazy-JSON'>I&#8217;ve written about before</a>)</p>
+<br />
+<h2 id='the_algorithm'>The Algorithm</h2>
+
+<p>So far, I&#8217;ve read two papers on scrabble solvers. <a href='http://www.cs.cmu.edu%2Fafs%2Fcs%2Facademic%2Fclass%2F15451-s06%2Fwww%2Flectures%2Fscrabble.pdf'>This one</a> describes a very fast algorithm to generate moves using a combination of a <a href='http://en.wikipedia.org/wiki/DAWG'>directed acyclic word graph</a> (DAWG) and non-deterministic generation.</p>
+
+<p><a href='http://www.ericsink.com/downloads/faster-scrabble-gordon.pdf'>This second one</a> builds off the original and intruduces a <a href='http://en.wikipedia.org/wiki/GADDAG'>GADDAG</a> &#8212; a variation on a DAWG that holds the computes and stores every revesed-prefix of a word. This eliminates the non-determinism found in the original algorithm.</p>
+
+<p>I decided to go with the slower (though still extremely fast) algorithm since it was easier to understand. I plan to use the GADDAG algorithm later this summer.</p>
+<br />
+<h2 id='implementation'>Implementation</h2>
+
+<p>You can find my (still incomplete) implementation <a href='http://github.com/leeavital/scrabble.li'>on github</a></p>
+<br />
+<h2 id='on_the_d_language'>On the D Language</h2>
+
+<p>Along the way, I&#8217;ve been finding cool/useful features of D that I thought I would share:</p>
+
+<h3 id='headtail_list_comprehensions'>Head/Tail list comprehensions</h3>
+
+<p>D arrays (as well as D strings) support slicing, which allowed me to write the following in my DAWG implementation:</p>
+<pre>
+void put( string s){
+  if( s == "" ){
+    isWord = true;  
+  }
+
+  else{
+    auto head = s[0];
+    auto tail = s[1..$]
+
+    // more code...
+  } 
+ }
+</pre><br />
+<h3 id='static_type_inferencing'>Static Type Inferencing</h3>
+
+<p>You might have noticed that I used the <code>auto</code> keyword above &#8212; that will tell dmd to infer the type of whatever variable is declared.</p>
+<br />
+<h3 id='operator_overloading'>Operator Overloading</h3>
+
+<p>I really like operator overloading in D, it takes the approach most object oriented languages take, but the syntax is very friendly. Here&#8217;s a short snippet I used to make my scrabble board representation indexable:</p>
+<pre>
+void opIndexAssign( char c, int i, int j ){
+
+   board[i][j] = c; 
+
+}
+</pre><br />
+<h3 id='explicit_override'>Explicit Override</h3>
+
+<p>What this means, is that when you override a function in a child class, you have to explicitly tell the compiler that you are overriding. The closest thing I&#8217;ve ever seen to this is the @override decorator in Java, which will only generate a warning <em>when used incorrectly</em>. The D compiler will always force this notation.</p>
+<pre>
+  override string toString(){
+     return "overrided toString()";
+  } 
+</pre>
+<p>At first I wasn&#8217;t too sure about this. The Java solution seems better since you don&#8217;t <em>have</em> to use t, but after reading the <a href='http://dlang.org/hijack.html'>rational behind D&#8217;s solution</a> (they call it hijacking) on dlang.org, I was (more) convinced.</p>
+		</div>
+  
+
+    <br style="clear: both" />
+
+		<ul id="bottom-links">
+			
+			<li> <a href="http://leeavital.github.io/SNAP/">SNAP</a></li>	
+              <br />
+                
+			<li> <a href="http://leeavital.github.io/Erlang-Chat/">Erlang Chat</a></li>	
+              <br />
+                
+			<li> <a href="http://leeavital.github.io/This-Site/">This Website</a></li>	
+              <br />
+                
+			<li> <a href="http://leeavital.github.io/Ethereal-Commerce/">Ethereal Commerce</a></li>	
+              <br />
+                
+			<li> <a href="http://leeavital.github.io/Lazy-JSON/">Lazy JSON.d</a></li>	
+              <br />
+                
+			<li> <a href="http://leeavital.github.io/Scrabb-Li/">Scrabb.li</a></li>	
+              <br />
+                	
+		</ul>
+
+
+	</body>
+
+
+</html>
+<!--Powered by bonsai : tinytree.info-->
