@@ -50,9 +50,63 @@ body: |
   Along the way, I've been finding cool/useful features of D that I thought
   I would share:
 
-  * List comprehensions
-   <br />
-   <pre>
-    asdfadf
-   </pre>
-  * Operator overloading
+  ### Head/Tail list comprehensions
+  D arrays (as well as D strings) support slicing, which allowed me to write the following in 
+  my DAWG implementation:
+   
+  <pre>
+  void put( string s){
+    if( s == "" ){
+      isWord = true;  
+    }
+    
+    else{
+      auto head = s[0];
+      auto tail = s[1..$]
+    
+      // more code...
+    } 
+   }
+  </pre>
+
+  <br />
+   
+  ### Static Type Inferencing
+  You might have noticed that I used the <code>auto</code> keyword above --- that 
+  will tell dmd to infer the type of whatever variable is declared. 
+
+  
+  <br />
+   
+  ### Operator Overloading
+  I really like operator overloading in D, it takes the approach most object oriented languages
+  take, but the syntax is very friendly. Here's a short snippet I used to make my scrabble board
+  representation indexable:
+
+  <pre>
+  void opIndexAssign( char c, int i, int j ){
+    
+     board[i][j] = c; 
+   
+  }
+  </pre>
+
+   
+  <br />
+  ### Explicit Override
+  What this means, is that when you override a function in a child class, you have to explicitly tell the
+  compiler that you are overriding. The closest thing I've ever seen to this is the @override decorator 
+  in Java, which will only generate a warning *when used incorrectly*. The D compiler will
+  always force this notation.
+  
+  <pre>
+    override string toString(){
+       return "overrided toString()";
+    } 
+  </pre>
+
+  At first I wasn't too sure about this. The Java solution seems better
+  since you don't *have* to use t,  but after reading the 
+  [rational behind D's solution](http://dlang.org/hijack.html) (they call it hijacking)  on dlang.org, 
+  I was (more) convinced.
+
