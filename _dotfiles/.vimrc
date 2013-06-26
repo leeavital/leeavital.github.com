@@ -30,3 +30,14 @@ set nowrap
 
 
 set cursorline
+
+
+
+colorscheme murphy
+
+nore ; :
+nore , ;
+
+
+
+set cc=80
