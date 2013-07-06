@@ -33,11 +33,14 @@ set cursorline
 
 
 
+" colorscheem
 colorscheme murphy
 
+
+" no need for shift key when changing modes
 nore ; :
 nore , ;
 
 
-
+" encforce 80 column limit
 set cc=80
