@@ -30,7 +30,7 @@
 		<div id="left">
 
 			<ul id="side-links">
-				{% for n in navigation %}
+				{% for n in navigation reversed %}
 				<li> <a href="{{url}}{{n.permalink}}">{{n.title}}</a></li>	
                 <br />
                 {% endfor %}	
