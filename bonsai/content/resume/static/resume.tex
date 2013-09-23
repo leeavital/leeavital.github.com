@@ -1,6 +1,6 @@
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+% \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
 
@@ -28,7 +28,7 @@
 \section{EDUCATION}  Rochester Institute of Technology \\ 
                      B.S. in  Computer Science,  expected May 2016 \\
 	                 Minor in Music and Technology\\
-	                 3.8 GPA (3.9 PFOS) \\
+%	                 3.8 GPA (3.9 PFOS) \\
 	                 Dean's List: Fall 2011 - Present
 
 
@@ -53,31 +53,36 @@
 \section{PROJECTS}
 
 \begin{itemize} \itemsep -2pt
+
+\item {\bf 21CC (21st Century Cookbook)} Uses machine learning to give a user 
+   suggestions about new recipes to try. Built with AngularJS and Flask during
+   the 2013 MHacks hackathon.
+
+\item {\bf Volumetric Display} a 3-D display that achieves depth through the 
+   use of a spinning mirror and a single projection 
+   (part of a group of 15 people).
+
 \item {\bf SNAP (shared namespace application programming)} 
    A PHP microframework that drastically simplifies AJAX requests by 
    exposing selected PHP functions through an automatically generated
    javascript API.
 
 
-\item {\bf Volumetric Display} a 3-D display that achieves depth through the 
-   use of a spinning mirror and a single projection 
-   (part of a group of 15 people)
 
 
-\item {\bf Erlang-Chat}   A multi-client chat server written in erlang with a 
-   client written in java/swing.
-
-
-\item {\bf LazyJSON}  A lazy JSON parser written in the D programming language
+\item {\bf Erlang-Chat}   A multi-client chat server written in Erlang with a 
+   client written in Java/Swing.
 
 \item {\bf EventOmniBox}  A Javascript tool that interprets human input about 
-any event and provides the programmer with a usable interface to that 
-interpretation.
+   any event and provides the programmer with a usable interface to that 
+   interpretation.
+
+
+\item {\bf LazyJSON}  A lazy JSON parser written in the D programming language.
+
 
 \end{itemize}
 % \item {\bf Ethereal-Commerce:} an ecommerce content managment system with support for theming built with PHP and MySQL
-
-
  
 \section{WORK EXPERIENCE} 
 			   {\bf Developer Intern} \hfill May 2013 - September 2013\\
@@ -85,6 +90,8 @@ interpretation.
 			   \begin{itemize} \itemsep -2pt
 				  \item Built new interfaces from the ground up to aid in user education and engagement
 				  \item Built an internal tool to manage site content
+				  \item Built an internally used, pseudo-concurrent "status tracker" that keeps track
+					 of shipments
 				  \item Assisted redesigning/refactoring site architecture
 			   \end{itemize}
 
