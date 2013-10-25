@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.15)  24 SEP 2013 09:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.15)  24 OCT 2013 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -60,7 +60,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
 
-Overfull \hbox (6.53311pt too wide) in paragraph at lines 65--69
+Overfull \hbox (6.53311pt too wide) in paragraph at lines 71--75
 []\OT1/cmr/bx/n/10 SNAP (Shared Names-pace Ap-pli-ca-tion Pro-gram-ming) \OT1/c
 mr/m/n/10 A PHP mi-croframe-
  []
@@ -82,7 +82,7 @@ fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb>
-Output written on resume.pdf (1 page, 70935 bytes).
+Output written on resume.pdf (1 page, 71331 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
