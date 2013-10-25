@@ -81,3 +81,8 @@ p {
   font-family: monospace;
   margin-bottom: 20px;
   border: 1px dashed green; }
+#right ul {
+  position: relative;
+  left: 20px; }
+  #right ul li {
+    margin-top: 20px; }

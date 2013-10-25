@@ -1,0 +1,20 @@
+title: 21CC
+
+github: http://github.com/leeavital/21CC
+
+body: | 
+   21CC (21st Century Cookbook) is a smart cookbook web-app that I worked on
+   during the 2013 MHacks hackathon. It uses neural networks to predict what
+   recipes a user might like. 
+
+   
+   You start by training on ten sample recipes from our database that we pulled
+   from <a href="http://www.yummly.com/">yummly</a>.  After that, you put
+   in some of the ingredients you already have in your pantry. A neural network
+   generates some recipes, which are filtered based on what's in your pantry. 
+   At the end, you get five recipes that you can consequentially rate, which 
+   will improve the suggestions even more.
+
+
+   The website is sporadically available at <a href="http://twentyfirstcenturycookbook.us">
+   twentyfirstcenturycookbook</a>.
