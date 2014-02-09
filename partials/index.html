@@ -1,0 +1,17 @@
+<div class="row">
+   
+   <div class="col-xs-3"> 
+      <div class="" ng-repeat="article in articles" >
+         <a ng-click="showArticle(article.slug)">{{article.title}}</a>
+      </div> 
+   </div>
+
+
+   <div class="col-xs-9">
+      <h1>{{title}}</h1>
+      <div>
+         {{content}}
+      </div>
+   
+   </div>
+</div>
