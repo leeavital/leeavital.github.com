@@ -1,0 +1,28 @@
+{
+  "name": "leeavital.github.com",
+  "version": "0.0.0",
+  "description": "Personal site",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leeavital/leeavital.github.com"
+  },
+  "author": "Lee Avital",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeavital/leeavital.github.com/issues"
+  },
+  "homepage": "https://github.com/leeavital/leeavital.github.com",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "angular": "~1.2.10"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-sass": "~0.10.0",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}
