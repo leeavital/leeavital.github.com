@@ -2,15 +2,15 @@
 <html ng-app="homesiteApp" ng-controller="HomeController">
    <head>
       <title>Lee Avital | About Me</title>
-      <link type="text/css" rel="stylesheet" href="http://leeavital.com/css/style.css" />
-      
+      <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-      
+
       <script type="text/javascript">
          var _gaq = _gaq || [];
          _gaq.push(['_setAccount', 'UA-37913572-1']);
          _gaq.push(['_trackPageview']);
-         
+
          (function() {
           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -21,9 +21,9 @@
 
       <script type="text/javascript" src="lib/angular.js"></script>
       <script type="text/javascript" src="lib/compiled-lib.js" ></script>
-      <script type="text/javascript" src="app/compiled.js"></script>
+      <script type="text/javascript" src="app.js"></script>
 
-   </head>  
+   </head>
    <body>
       <div id="navigation">
          <a href="#/home">home</a>
@@ -32,15 +32,15 @@
          <br class="clear: both" />
       </div>
       <div id="left">
-      
+
       <ul id="side-links">
         <li ng-repeat="article in articles">
             <a href="#/{{article.slug}}" ng-click="showArticle(article.slug)">{{article.title}}</a>
         </li>
       </ul>
-      
-      
-      </div>   
+
+
+      </div>
       <div id="right">
       <h1>{{title}}</h1>
 
