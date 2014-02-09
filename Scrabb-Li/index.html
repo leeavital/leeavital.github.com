@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Lee Avital | Scrabb.li</title>
-		<link type="text/css" rel="stylesheet" href="http://leeavital.com/css/style.css" />
+		<link type="text/css" rel="stylesheet" href="http://localhost:5000/css/style.css" />
 		 	
 		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
@@ -22,37 +22,37 @@
     </head>	
 	<body>
 		<div id="navigation">
-			<a href="http://leeavital.com/">home</a>
-            <a href="http://leeavital.com/resume/static/resume.pdf">resume</a>
-            <a href="http://leeavital.com/contact">contact</a>
+			<a href="http://localhost:5000/">home</a>
+            <a href="http://localhost:5000/resume/static/resume.pdf">resume</a>
+            <a href="http://localhost:5000/contact">contact</a>
 			<br class="clear: both" />
 		</div>
 		<div id="left">
 
 			<ul id="side-links">
 				
-				<li> <a href="http://leeavital.com/LeadSheet/">LeadSheet</a></li>	
+				<li> <a href="http://localhost:5000/LeadSheet/">LeadSheet</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/21CC/">21CC</a></li>	
+				<li> <a href="http://localhost:5000/21CC/">21CC</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/Volumetric-Display/">Volumetric Display</a></li>	
+				<li> <a href="http://localhost:5000/Volumetric-Display/">Volumetric Display</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/Scrabb-Li/">Scrabb.li</a></li>	
+				<li> <a href="http://localhost:5000/Scrabb-Li/">Scrabb.li</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/Lazy-JSON/">Lazy JSON.d</a></li>	
+				<li> <a href="http://localhost:5000/Lazy-JSON/">Lazy JSON.d</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/This-Site/">This Website</a></li>	
+				<li> <a href="http://localhost:5000/This-Site/">This Website</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/Erlang-Chat/">Erlang Chat</a></li>	
+				<li> <a href="http://localhost:5000/Erlang-Chat/">Erlang Chat</a></li>	
                 <br />
                 
-				<li> <a href="http://leeavital.com/SNAP/">SNAP</a></li>	
+				<li> <a href="http://localhost:5000/SNAP/">SNAP</a></li>	
                 <br />
                 	
 			</ul>
@@ -65,27 +65,34 @@
                <br /> 
                <br />
             
-			<h2 id='background'>Background</h2>
+			
+<h2 id="background">Background</h2>
 
-<p>This summer the society for software engineers decided to run <a href='http://scrabb.li'>scrabb.li</a> &#8212; a neat competition where everyone writes a scrabble solver in their language of choice and pits them against eachother. Most everyone is taking this as an opportunity to learn a strange new language or environment, and I decided to brush up on D (one of my favorite languages, which <a href='../Lazy-JSON'>I&#8217;ve written about before</a>)</p>
-<br />
-<h2 id='the_algorithm'>The Algorithm</h2>
+<p>This summer the society for software engineers decided to run <a href="http://scrabb.li">scrabb.li</a> — a neat competition where everyone writes a scrabble solver in their language of choice and pits them against eachother. Most everyone is taking this as an opportunity to learn a strange new language or environment, and I decided to brush up on D (one of my favorite languages, which <a href="../Lazy-JSON">I’ve written about before</a>)</p>
 
-<p>So far, I&#8217;ve read two papers on scrabble solvers. <a href='http://www.cs.cmu.edu%2Fafs%2Fcs%2Facademic%2Fclass%2F15451-s06%2Fwww%2Flectures%2Fscrabble.pdf'>This one</a> describes a very fast algorithm to generate moves using a combination of a <a href='http://en.wikipedia.org/wiki/DAWG'>directed acyclic word graph</a> (DAWG) and non-deterministic generation.</p>
+<p><br /></p>
 
-<p><a href='http://www.ericsink.com/downloads/faster-scrabble-gordon.pdf'>This second one</a> builds off the original and intruduces a <a href='http://en.wikipedia.org/wiki/GADDAG'>GADDAG</a> &#8212; a variation on a DAWG that holds the computes and stores every revesed-prefix of a word. This eliminates the non-determinism found in the original algorithm.</p>
+<h2 id="the_algorithm">The Algorithm</h2>
+
+<p>So far, I’ve read two papers on scrabble solvers. <a href="http://www.cs.cmu.edu%2Fafs%2Fcs%2Facademic%2Fclass%2F15451-s06%2Fwww%2Flectures%2Fscrabble.pdf">This one</a> describes a very fast algorithm to generate moves using a combination of a <a href="http://en.wikipedia.org/wiki/DAWG">directed acyclic word graph</a> (DAWG) and non-deterministic generation.</p>
+
+<p><a href="http://www.ericsink.com/downloads/faster-scrabble-gordon.pdf">This second one</a> builds off the original and intruduces a <a href="http://en.wikipedia.org/wiki/GADDAG">GADDAG</a> — a variation on a DAWG that holds the computes and stores every revesed-prefix of a word. This eliminates the non-determinism found in the original algorithm.</p>
 
 <p>I decided to go with the slower (though still extremely fast) algorithm since it was easier to understand. I plan to use the GADDAG algorithm later this summer.</p>
-<br />
-<h2 id='implementation'>Implementation</h2>
 
-<p>You can find my (still incomplete) implementation <a href='http://github.com/leeavital/scrabble.li'>on github</a></p>
-<br />
-<h2 id='on_the_d_language'>On the D Language</h2>
+<p><br /></p>
 
-<p>Along the way, I&#8217;ve been finding cool/useful features of D that I thought I would share:</p>
+<h2 id="implementation">Implementation</h2>
 
-<h3 id='headtail_list_comprehensions'>Head/Tail list comprehensions</h3>
+<p>You can find my (still incomplete) implementation <a href="http://github.com/leeavital/scrabble.li">on github</a></p>
+
+<p><br /></p>
+
+<h2 id="on_the_d_language">On the D Language</h2>
+
+<p>Along the way, I’ve been finding cool/useful features of D that I thought I would share:</p>
+
+<h3 id="headtail_list_comprehensions">Head/Tail list comprehensions</h3>
 
 <p>D arrays (as well as D strings) support slicing, which allowed me to write the following in my DAWG implementation:</p>
 <pre>
@@ -93,38 +100,45 @@ void put( string s){
   if( s == "" ){
     isWord = true;  
   }
-
+  
   else{
     auto head = s[0];
     auto tail = s[1..$]
-
+  
     // more code...
   } 
  }
-</pre><br />
-<h3 id='static_type_inferencing'>Static Type Inferencing</h3>
+</pre>
+<p><br /></p>
 
-<p>You might have noticed that I used the <code>auto</code> keyword above &#8212; that will tell dmd to infer the type of whatever variable is declared.</p>
-<br />
-<h3 id='operator_overloading'>Operator Overloading</h3>
+<h3 id="static_type_inferencing">Static Type Inferencing</h3>
 
-<p>I really like operator overloading in D, it takes the approach most object oriented languages take, but the syntax is very friendly. Here&#8217;s a short snippet I used to make my scrabble board representation indexable:</p>
+<p>You might have noticed that I used the <code>auto</code> keyword above — that will tell dmd to infer the type of whatever variable is declared.</p>
+
+<p><br /></p>
+
+<h3 id="operator_overloading">Operator Overloading</h3>
+
+<p>I really like operator overloading in D, it takes the approach most object oriented languages take, but the syntax is very friendly. Here’s a short snippet I used to make my scrabble board representation indexable:</p>
 <pre>
 void opIndexAssign( char c, int i, int j ){
-
+  
    board[i][j] = c; 
-
+ 
 }
-</pre><br />
-<h3 id='explicit_override'>Explicit Override</h3>
+</pre>
+<p><br /></p>
 
-<p>What this means, is that when you override a function in a child class, you have to explicitly tell the compiler that you are overriding. The closest thing I&#8217;ve ever seen to this is the @override decorator in Java, which will only generate a warning <em>when used incorrectly</em>. The D compiler will always force this notation.</p>
+<h3 id="explicit_override">Explicit Override</h3>
+
+<p>What this means, is that when you override a function in a child class, you have to explicitly tell the compiler that you are overriding. The closest thing I’ve ever seen to this is the @override decorator in Java, which will only generate a warning <em>when used incorrectly</em>. The D compiler will always force this notation.</p>
 <pre>
   override string toString(){
      return "overrided toString()";
   } 
 </pre>
-<p>At first I wasn&#8217;t too sure about this. The Java solution seems better since you don&#8217;t <em>have</em> to use t, but after reading the <a href='http://dlang.org/hijack.html'>rational behind D&#8217;s solution</a> (they call it hijacking) on dlang.org, I was (more) convinced.</p>
+<p>At first I wasn’t too sure about this. The Java solution seems better since you don’t <em>have</em> to use t, but after reading the <a href="http://dlang.org/hijack.html">rational behind D’s solution</a> (they call it hijacking) on dlang.org, I was (more) convinced.</p>
+
 		</div>
   
 
@@ -132,28 +146,28 @@ void opIndexAssign( char c, int i, int j ){
 
 		<ul id="bottom-links">
 			
-			<li> <a href="http://leeavital.com/SNAP/">SNAP</a></li>	
+			<li> <a href="http://localhost:5000/SNAP/">SNAP</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/Erlang-Chat/">Erlang Chat</a></li>	
+			<li> <a href="http://localhost:5000/Erlang-Chat/">Erlang Chat</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/This-Site/">This Website</a></li>	
+			<li> <a href="http://localhost:5000/This-Site/">This Website</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/Lazy-JSON/">Lazy JSON.d</a></li>	
+			<li> <a href="http://localhost:5000/Lazy-JSON/">Lazy JSON.d</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/Scrabb-Li/">Scrabb.li</a></li>	
+			<li> <a href="http://localhost:5000/Scrabb-Li/">Scrabb.li</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/Volumetric-Display/">Volumetric Display</a></li>	
+			<li> <a href="http://localhost:5000/Volumetric-Display/">Volumetric Display</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/21CC/">21CC</a></li>	
+			<li> <a href="http://localhost:5000/21CC/">21CC</a></li>	
               <br />
                 
-			<li> <a href="http://leeavital.com/LeadSheet/">LeadSheet</a></li>	
+			<li> <a href="http://localhost:5000/LeadSheet/">LeadSheet</a></li>	
               <br />
                 	
 		</ul>
