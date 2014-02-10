@@ -16,7 +16,7 @@ module.exports = function( grunt ){
                 dest: 'dist/js/app.js'
             },
             libs: {
-                src: ['node_modules/angular/lib/angular.min.js'],
+                src: ['node_modules/angular/lib/angular.min.js', 'node_modules/markdown/lib/markdown.js'],
                 dest: 'dist/js/libs.js'
             }
         },

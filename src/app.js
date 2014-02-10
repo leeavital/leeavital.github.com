@@ -43,7 +43,7 @@ appServices.factory( 'posts', ['$http', '$q',  function($http, $q){
 var appControllers = angular.module( 'appControllers', [] );
 
 appControllers.controller( 'HomeController',
-   ['$scope', 'posts', '$location', function( $scope, posts, $loc){
+   ['$scope', 'posts', '$location', '$sce', function( $scope, posts, $loc, $sce){
 
 
 
@@ -64,7 +64,7 @@ appControllers.controller( 'HomeController',
       posts.findBySlug( slug ).then( function( article ){
         console.log( 'showing article: ' + slug );
         $scope.title =  article.title;
-        $scope.content = article.content;;
+        $scope.content = $sce.trustAsHtml( article.content );
       } );
 
       $loc.path(  '/' + slug );

@@ -13,5 +13,12 @@
         "title": "My Second Post",
         "contentURL": "data/second.html",
         "slug": "my-second"
+    },
+
+
+    {
+        "title": "SNAP",
+        "contentURL": "data/snap.html",
+        "slug": "snap"
     }
 ]
