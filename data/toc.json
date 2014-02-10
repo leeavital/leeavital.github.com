@@ -1,5 +1,17 @@
 [
-   {"title": "Home", "contentURL": "data/home.html", "slug" : "home", "page": true  },
-   {"title": "My First Post", "contentURL": "data/first.html", "slug": "my-first" },
-   {"title": "My Second Post", "contentURL": "data/second.html", "slug": "my-second"}
+    {"title": "Contact", "contentURL": "data/contact.html", "slug": "contact", "page":true },
+    {"title": "Home", "contentURL": "data/home.html", "slug" : "home", "page": true  },
+
+    {
+        "title": "My First Post",
+        "contentURL": "data/first.html",
+        "slug": "my-first"
+    },
+
+
+    {
+        "title": "My Second Post",
+        "contentURL": "data/second.html",
+        "slug": "my-second"
+    }
 ]
