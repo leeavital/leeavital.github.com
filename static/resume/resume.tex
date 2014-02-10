@@ -1,0 +1,125 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+% \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+
+
+
+%padding and margins
+\voffset=0in
+\oddsidemargin=0pt
+\headheight=0pt
+\topmargin=0in
+\headsep=0in
+\textheight=10in
+
+
+\begin{document}
+
+\name{Lee J. Avital}
+% \address used twice to have two lines of address
+\address{80 Colony Manor Drive, Apartment 5\\ Rochester, NY 14623}
+\address{(646) 320-9143\\leeavital@gmail.com}
+
+
+\begin{resume}
+ 
+\section{EDUCATION}  Rochester Institute of Technology \\ 
+                     B.S. in  Computer Science,  expected May 2016 \\
+	                 Minor in Music and Technology\\
+%	                 3.8 GPA (3.9 PFOS) \\
+	                 Dean's List: Fall 2011 - Present
+
+
+\section{SPECIALIZED COURSEWORK}
+\begin{itemize} \itemsep -2pt
+   \item Programming Language Theory (fall 2013)
+   \item Aspect Oriented Programming (fall 2013)
+   \item Language, Technology and Society (spring 2013)
+   \item Acoustic Theory (spring 2013)
+\end{itemize}
+
+
+\section{PORTFOLIO}
+
+\begin{itemize} \itemsep -2pt
+   \item {\bf Personal Website}  {\sl http://leeavital.com}
+   \item {\bf Github}	{\sl  https://github.com/leeavital }
+\end{itemize}
+
+
+
+\section{PROJECTS}
+
+\begin{itemize} \itemsep -2pt
+
+\item {\bf 21CC (21st Century Cookbook)} Uses machine learning to give a user 
+   suggestions about new recipes to try. Built with AngularJS and Flask during
+   the 2013 MHacks hackathon.
+
+\item {\bf Volumetric Display} a 3-D display that achieves depth through the 
+   use of a spinning mirror and a single projection 
+   (part of a group of 15 people).
+
+\item {\bf SNAP (Shared Namespace Application Programming)} 
+   A PHP microframework that drastically simplifies AJAX requests by 
+   exposing selected PHP functions through an automatically generated
+   javascript API.
+
+
+
+
+\item {\bf Erlang-Chat}   A multi-client chat server written in Erlang with a 
+   client written in Java/Swing.
+
+\item {\bf EventOmniBox}  A Javascript tool that interprets human input about 
+   any event and provides the programmer with a usable interface to that 
+   interpretation.
+
+
+\item {\bf LazyJSON}  A lazy JSON parser written in the D programming language.
+
+
+\end{itemize}
+% \item {\bf Ethereal-Commerce:} an ecommerce content managment system with support for theming built with PHP and MySQL
+ 
+\section{WORK EXPERIENCE} 
+			   {\bf Developer Intern} \hfill May 2013 - September 2013\\
+			   Massdrop Inc.
+			   \begin{itemize} \itemsep -2pt
+				  \item Built new interfaces from the ground up to aid in user education and engagement
+				  \item Built an internal tool to manage site content
+				  \item Built an internally used, pseudo-concurrent "status tracker" that keeps track
+					 of shipments
+				  \item Assisted redesigning/refactoring site architecture
+			   \end{itemize}
+
+			   {\bf Web Applications Programmer} \hfill May 2012 - May 2013\\
+               National Technical Institute for the Deaf at RIT, 
+               Rochester, NY
+               
+                 \begin{itemize}  \itemsep -2pt % reduce space between items
+				  \item Maintained and developed a course management system built on the ASP Classic Platform
+                  \item Built a file repository applications for instructors and students to manage course content
+                  \item Worked with a designer to create clean and usable user interfaces
+                  \item Maintained several legacy applications including an online sign language dictionary
+                \end{itemize}
+ 
+
+   
+                %{\bf Part-Time Developer} \hfill            November 2012 - May 2013\\
+                %  RoomioTV
+                %  \begin{itemize}  \itemsep -2pt %reduce space between items
+                %     \item Implemented a framework for developing web based applications on a TV
+                %     \item Assisted in logical database design
+                % \end{itemize} 
+ 
+				 \section{EXTRA-CURRICULAR \\ ACTIVITIES}             
+				     \begin{itemize}  \itemsep -2pt 
+						\item Participant, RIT Pep Band
+				     	\item Participant, RIT Concert Band 
+					 	\item Member, Society of Software Engineers at RIT
+				 	\end{itemize} 
+\end{resume}
+\end{document}
