@@ -13,5 +13,11 @@
         "contentURL": "data/erlang-chat.html",
         "slug": "erlang-chat",
         "github": "https://github.com/leeavital/Erlang-Chat"
+    },
+
+    {
+        "title": "My Public Calendar",
+        "contentURL": "data/calendar.html",
+        "slug": "calendar"
     }
 ]
