@@ -3,22 +3,15 @@
     {"title": "Home", "contentURL": "data/home.html", "slug" : "home", "page": true  },
 
     {
-        "title": "My First Post",
-        "contentURL": "data/first.html",
-        "slug": "my-first"
-    },
-
-
-    {
-        "title": "My Second Post",
-        "contentURL": "data/second.html",
-        "slug": "my-second"
-    },
-
-
-    {
         "title": "SNAP",
         "contentURL": "data/snap.html",
         "slug": "snap"
+    },
+
+    {
+        "title": "Erlang Chat",
+        "contentURL": "data/erlang-chat.html",
+        "slug": "erlang-chat",
+        "github": "https://github.com/leeavital/Erlang-Chat"
     }
 ]

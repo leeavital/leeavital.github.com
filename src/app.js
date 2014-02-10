@@ -57,15 +57,20 @@ appControllers.controller( 'HomeController',
    posts.allPosts.then( function( allPosts ){
       console.log( allPosts );
       $scope.articles = allPosts;
+      console.log( allPosts );
    });
 
 
    $scope.showArticle = function( slug ){
       posts.findBySlug( slug ).then( function( article ){
-        console.log( 'showing article: ' + slug );
-        $scope.title =  article.title;
-        $scope.content = $sce.trustAsHtml( article.content );
-      } );
+            console.log( article );
+            $scope.title =  article.title;
+            $scope.content = $sce.trustAsHtml( article.content );
+            if( typeof article.github !== 'undefined' ){
+                console.log( 'got a github' );
+                $scope.github = article.github;
+            }
+        });
 
       $loc.path(  '/' + slug );
    };
