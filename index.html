@@ -2,7 +2,7 @@
 <html ng-app="homesiteApp" ng-controller="HomeController">
    <head>
       <title>Lee Avital | About Me</title>
-      <link type="text/css" rel="stylesheet" href="/css/main.css" />
+      <link type="text/css" rel="stylesheet" href="/dist/css/main.css" />
 
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
@@ -19,22 +19,21 @@
       </script>
 
 
-      <script type="text/javascript" src="lib/angular.js"></script>
-      <script type="text/javascript" src="lib/compiled-lib.js" ></script>
-      <script type="text/javascript" src="app.js"></script>
+      <script type="text/javascript" src="/dist/js/libs.js" ></script>
+      <script type="text/javascript" src="/dist/js/app.js"></script>
 
    </head>
    <body>
       <div id="navigation">
-         <a href="#/home">home</a>
-         <a href="http://leeavital.com/resume/static/resume.pdf">resume</a>
-         <a href="http://leeavital.com/contact">contact</a>
+         <a href="#/home" ng-click="showArticle('home')">home</a>
+         <a href="/static/resume/resume.pdf">resume</a>
+         <a href="#/contact" ng-click="showArticle( 'contact')" >contact</a>
          <br class="clear: both" />
       </div>
       <div id="left">
 
       <ul id="side-links">
-        <li ng-repeat="article in articles">
+        <li ng-repeat="article in articles | filter:isArticle">
             <a href="#/{{article.slug}}" ng-click="showArticle(article.slug)">{{article.title}}</a>
         </li>
       </ul>

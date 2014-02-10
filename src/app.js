@@ -42,13 +42,14 @@ appServices.factory( 'posts', ['$http', '$q',  function($http, $q){
 
 var appControllers = angular.module( 'appControllers', [] );
 
-appControllers.controller( 'HomeController', 
+appControllers.controller( 'HomeController',
    ['$scope', 'posts', '$location', function( $scope, posts, $loc){
 
 
 
    var slug = $loc.path().replace( /\//, '' );
-   if( typeof slug == 'undefined' ){
+   console.log( slug );
+   if( typeof slug === 'undefined' || slug === ''  ){
       slug = 'home';
    }
 
@@ -70,9 +71,16 @@ appControllers.controller( 'HomeController',
    };
 
 
+   $scope.isArticle = function( article ){
+        return !article.page;
+   }
+
+   console.log( slug );
    $scope.showArticle( slug );
 }]);
 
 
+
+
 // build this file
-var app =  angular.module(  'homesiteApp', ['appControllers', 'appServices'] );
+var app =  angular.module(  'homesiteApp', ['appControllers', 'appServices', 'appFilters'] );
