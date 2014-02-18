@@ -19,6 +19,8 @@ appServices.factory( 'posts', ['$http', '$q',  function($http, $q){
 
          $http.get( thepost.contentURL ).success( function( d ){
             thepost.content = d;
+            thepost.github = thepost.github || false;
+            thepost.page = thepost.page || false;
             deferred.resolve( thepost );
          });
 
@@ -27,14 +29,10 @@ appServices.factory( 'posts', ['$http', '$q',  function($http, $q){
       return deferred.promise;
    }
 
-   var showPage = function(){
-    throw "UNIMPLEMENTED";
-   }
 
    return {
       allPosts: allPosts.promise,
       findBySlug: findBySlug,
-      showPage: showPage
    }
 
 }]);
@@ -65,6 +63,9 @@ appControllers.controller( 'HomeController',
       posts.findBySlug( slug ).then( function( article ){
             console.log( article );
             $scope.title =  article.title;
+
+
+            // need this to inject HTML
             $scope.content = $sce.trustAsHtml( article.content );
             if( typeof article.github !== 'undefined' ){
                 console.log( 'got a github' );
