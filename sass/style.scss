@@ -25,6 +25,10 @@ $cutoff: 400px;
     font-family: 'ABeeZee', sans-serif;
 }
 
+html, body{
+   min-height: 100%;
+}
+
 
 body{
    background-color: white;

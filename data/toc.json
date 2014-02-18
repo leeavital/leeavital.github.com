@@ -1,11 +1,24 @@
 [
-    {"title": "Contact", "contentURL": "data/contact.html", "slug": "contact", "page":true },
-    {"title": "Home", "contentURL": "data/home.html", "slug" : "home", "page": true  },
+    {
+        "title": "Contact",
+        "contentURL": "data/contact.html",
+        "slug": "contact",
+        "page":true
+    },
+
+
+    {
+        "title": "Home",
+        "contentURL": "data/home.html",
+        "slug" : "home",
+        "page": true
+    },
 
     {
         "title": "SNAP",
         "contentURL": "data/snap.html",
-        "slug": "snap"
+        "slug": "snap",
+        "github": "https://github.com/leeavital/SNAP"
     },
 
     {
@@ -18,6 +31,8 @@
     {
         "title": "My Public Calendar",
         "contentURL": "data/calendar.html",
-        "slug": "calendar"
+        "slug": "calendar",
+        "page" : "true",
+        "github" : false
     }
 ]
