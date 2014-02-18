@@ -43,9 +43,12 @@
       </div>
       <div id="right" style="height: 100%">
       <h1>{{title}}</h1>
-            <br />
-            <a href="{{github}}" ng-if="github">On github</a>
-            <br />
+            <div ng-if="github">
+                <br />
+                <a href="{{github}}" >On github</a>
+                <br />
+            </div>
+
             <br />
 
 
