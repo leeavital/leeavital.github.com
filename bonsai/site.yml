@@ -10,12 +10,12 @@
 
 # use this on localhost
 # :site_name: localhost:5000
-:url:  http://localhost:5000
-:site_name: http://localhost:5000
+# :url:  http://localhost:5000
+# :site_name: http://localhost:5000
 # :copyright: 2013
 # :analytics_code: UA-00000000-0
 
 
 
-# :url:  http://leeavital.com
-# :site_name: http://leeavital.com
+:url:  http://leeavital.com
+:site_name: http://leeavital.com
