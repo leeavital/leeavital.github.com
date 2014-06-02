@@ -1,3 +1,6 @@
+syntax on
+
+
 " tab stuff
 set tabstop=3
 set shiftwidth=3
