@@ -4,6 +4,10 @@
 alias subl=/opt/SublimeText2/sublime_text
 
 
+export SBT_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
+
+
+
 function prompt_char {
    git branch >/dev/null 2>/dev/null && git branch | grep "\*.*" | sed -e 's/^..//' && return
 }
