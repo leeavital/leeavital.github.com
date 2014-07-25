@@ -1,11 +1,36 @@
 # Set up the prompt
 
 
-alias subl=/opt/SublimeText2/sublime_text
+alias ll="ls -lgG"
+
+MANPATH=$MATHPATH:/usr/local/opt/erlang/lib/erlang/man
+MAHPATH=$MANPATH:/usr/local/Cellar
+
+
+bindkey ^R history-incremental-search-backward
+
+# alias mvn=/usr/local/Cellar/maven/3.1.1/bin/mvn
+#
+# alias mysql=/usr/local/Cellar/mysql/5.6.15/bin/mysql
+
+# drawbridge
+export ADSYMP_SRC_TRUNK=/Users/lee/repos/drawbridge
+export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
+
+# so I can use ggrep :)
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/Cellar
+export PATH=$PATH:/Users/lee/bin
 
 
 export SBT_OPTS="-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=4000,server=y,suspend=n"
 
+
+function ads_ssh() { ssh -i ~/.ssh/key-adsymp adsymp@"$1"; }
+
+
+
+unsetopt beep
 
 
 function prompt_char {
@@ -56,7 +81,7 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-eval "$(dircolors -b)"
+# eval "$(dircolors -b)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
