@@ -6,6 +6,9 @@ alias ll="ls -lgG"
 MANPATH=$MATHPATH:/usr/local/opt/erlang/lib/erlang/man
 MAHPATH=$MANPATH:/usr/local/Cellar
 
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+
 
 bindkey ^R history-incremental-search-backward
 
@@ -34,12 +37,26 @@ unsetopt beep
 
 
 function prompt_char {
-   git branch >/dev/null 2>/dev/null && git branch | grep "\*.*" | sed -e 's/^..//' && return
+   br=`git branch >/dev/null 2>/dev/null && git branch | grep "\*.*" | sed -e 's/^..//' && return`
+   case "$br" in
+      "")
+         echo ""
+         ;;
+      *)
+         echo "on $fg[blue]$br$reset_color"
+         ;;
+   esac
+   return
 }
 
 function nice_pwd {
  # pwd | sed 's/\([a-z]\)[a-z]*\//\1\//gi'
  pwd | sed 's/\([^\\/]\)[^\\/]*\//\1\//gi'
+}
+
+function gen_jvm_project {
+   mkdir -p src/main/$1
+   mkdir -p src/test/$1
 
 }
 
@@ -47,11 +64,18 @@ function nice_pwd {
 autoload -Uz promptinit 
 autoload -U colors && colors
 promptinit
+setopt prompt_subst
 
 
 # PROMPT="$fg[green]%n$reset_color at $fg[red]%m $reset_color %U%B(%d)%b%u $ "
-PROMPT="$fg[green]%n$reset_color at $fg[red]%m $reset_color %U%B(%d)%b%u 
-$ "
+# PROMPT="$fg[green]%n$reset_color at $fg[red]%m $reset_color %U%B(%d)%b%u 
+# $ "
+
+
+
+
+PS1='$fg[green]%n$reset_color at $fg[red]%m $reset_color %U%B(%d)%b%u $(prompt_char)
+$ '
 
 
 # PROMPT="$fg[green]%n$reset_color at $fg[red]%m $reset_color %U%B(${nice_pwd})%b%u 

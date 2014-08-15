@@ -10,6 +10,7 @@ set nocompatible
 
 set noerrorbells
 set novisualbell
+set vb t_vb=
 
 
 
@@ -86,9 +87,10 @@ endfun
 nmap <F8> :TagbarToggle<CR>
 
 " open tagbar when supported
-autocmd VimEnter * nested :call tagbar#autoopen(1)
+" autocmd VimEnter * nested :call tagbar#autoopen(1)
 
 
 set foldmethod=syntax
 set foldlevelstart=100
+
 
