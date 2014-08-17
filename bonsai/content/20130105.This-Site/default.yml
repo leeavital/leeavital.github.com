@@ -10,8 +10,7 @@ body: |
    and my templates in liquid.
 
 
-   It also autocompiles SASS and LESS automatically so I implemented some
-   responsive design with SASS.  Go ahead
-   and resize that page!
+   It also autocompiles SASS automatically so I implemented some
+   css based responsive design.  Go ahead and resize that page!
 
 

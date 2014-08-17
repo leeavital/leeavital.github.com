@@ -6,18 +6,13 @@ $side-gutter: 2%
 $center-gutter: 1%
 $left-width: 10%
 $right-width: 84%
-$cutoff: 400px
+$cutoff: 500px
 
 
 
 @mixin sizetransition
    transition: width .3s ease-in
-   -webkit-transition: width .3s ease-in
-   -moz-transition: width .3s ease-in
-
    transition: height .3s ease-in
-   -webkit-transition: height .3s ease-in
-   -moz-transition: height .3s ease-in
 
 
 *
@@ -59,8 +54,9 @@ p
    margin-top: 20px
    border-right: 1px dotted #888
    
-   @media screen and (max-width: $cutoff)
+   @media (max-width: $cutoff)
       width: 0px
+      display: none
       border-right: none
    
 #right
@@ -90,7 +86,7 @@ p
    height: 0px
    text-align: center
 
-   @media screen and (max-width: $cutoff)
+   @media (max-width: $cutoff)
       height: auto 
       border-top: 1px solid $header-color
 

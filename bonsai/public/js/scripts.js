@@ -98,8 +98,5 @@ HIGHLIGHTER.doErlang = function(){
 
 		
 	}
-		
-
-
 
 }

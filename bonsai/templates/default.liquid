@@ -17,6 +17,7 @@
                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
 
+
          </script>
     
     </head>	
@@ -25,10 +26,10 @@
 			<a href="{{url}}/">home</a>
             <a href="{{url}}/resume/static/resume.pdf">resume</a>
             <a href="{{url}}/contact">contact</a>
+            <a href="{{twitter}}"><img style="display: inline; float: left; height: 20px; width: auto" src="/img/Twitter_logo_blue.png" /></a>
 			<br class="clear: both" />
 		</div>
 		<div id="left">
-
 			<ul id="side-links">
 				{% for n in navigation reversed %}
 				<li> <a href="{{url}}{{n.permalink}}">{{n.title}}</a></li>	
