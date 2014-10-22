@@ -1,4 +1,6 @@
-@import "http://fonts.googleapis.com/css?family=ABeeZee:400,400italic"
+@font-face
+   font-family: roboto
+   src: url("fonts/roboto.ttf")
 
 
 $header-color: #D8D8D8
@@ -8,17 +10,14 @@ $left-width: 10%
 $right-width: 84%
 $cutoff: 500px
 
-
-
 @mixin sizetransition
    transition: width .3s ease-in
    transition: height .3s ease-in
 
-
 *
    margin: 0px
    padding: 0px
-   font-family: 'ABeeZee', sans-serif
+   font-family: 'roboto', sans-serif
 
 body
    background-color: white
@@ -31,7 +30,7 @@ p
 
 #navigation
    background-color: $header-color
-   padding: 4px 
+   padding: 4px
    @include sizetransition
    a
       color: black
@@ -40,7 +39,7 @@ p
       margin-left: 10px
       float: left
 
-      &:first-child 
+      &:first-child
          margin-left: $side-gutter
 
 
@@ -49,35 +48,24 @@ p
    float: left
    display: inline
    overflow: hidden
-   width: 10% 
+   width: 10%
    margin-left: $side-gutter
    margin-top: 20px
    border-right: 1px dotted #888
-   
+
    @media (max-width: $cutoff)
       width: 0px
       display: none
       border-right: none
-   
+
 #right
    @include sizetransition
    float: left
    display: inline
-   margin-left: $center-gutter 
+   margin-left: $center-gutter
    margin-right: $side-gutter
    margin-top: 20px
    width: $right-width
-
-
-
-
-//    :after
-//       content: "."
-// 	  clear: both
-// 	  visibility: hidden
-
-
-
 
 
 #bottom-links
@@ -87,13 +75,8 @@ p
    text-align: center
 
    @media (max-width: $cutoff)
-      height: auto 
+      height: auto
       border-top: 1px solid $header-color
-
-
-
-
-
 
 #right
    pre, code
@@ -106,4 +89,3 @@ p
       left: 20px // hmmm
       li
          margin-top: 20px
-
