@@ -7,58 +7,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37913572-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+  {% include "google_analytics" %}
 
 </head>
 
 <body>
-  <div id="navigation">
-    <a href="{{url}}/">home</a>
-    <a href="{{url}}/resume/static/resume.pdf">resume</a>
-    <a href="{{url}}/contact">contact</a>
-    <a href="{{twitter}}">
-      <img style="display: inline; float: left; height: 20px; width: auto" src="/img/Twitter_logo_blue.png" />
-    </a>
-    <br class="clear: both" />
-  </div>
+  {% include "header" %}
   <div id="content">
-    <div id="left">
-      <ul id="side-links">
-        {% for n in navigation reversed %}
-        <li> <a href="{{url}}{{n.permalink}}">{{n.title}}</a>
-        </li>
-        <br />{% endfor %}
-      </ul>
-    </div>
-    <div id="right">
-      <h1>{{title}}</h1>{% if github %}
-      <br />
-      <a href="{{github}}">On Github</a>
-      <br />
-      <br />{% endif %} {{body}}
-    </div>
+    <h1>{{title}}</h1>{% if github %}
+    <br />
+    <a href="{{github}}">On Github</a>
+    <br />
+    <br />{% endif %} {{body}}
   </div>
-
-  <ul id="bottom-links">
-    {% for n in navigation %}
-    <li> <a href="{{url}}{{n.permalink}}">{{n.title}}</a>
-    </li>
-    <br />{% endfor %}
-  </ul>
-
 
 </body>
 </html>

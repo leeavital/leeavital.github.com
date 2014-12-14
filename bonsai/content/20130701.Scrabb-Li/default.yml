@@ -1,6 +1,8 @@
 title: Scrabb.li
 github: http://github.com/leeavital/scrabble.li
 
+date: 7/1/2013
+
 body: |
   ## Background
 
@@ -12,9 +14,9 @@ body: |
   on D (one of my favorite languages, which 
   [I've written about before](../Lazy-JSON))
 
-   
+
   <br />
-    
+
   ## The Algorithm
   So far, I've read two papers on scrabble solvers. 
   [This one](http://www.cs.cmu.edu%2Fafs%2Fcs%2Facademic%2Fclass%2F15451-s06%2Fwww%2Flectures%2Fscrabble.pdf)

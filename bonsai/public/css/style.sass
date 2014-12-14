@@ -19,6 +19,10 @@ $cutoff: 500px
 body
   background-color: white
 
+a
+  text-decoration: none
+  color: #00E
+
 
 p
   margin-bottom: 10px
@@ -41,53 +45,24 @@ p
 
 #content
   margin-top: 20px
-  display: flex
-
-
-
-#left
-  @include sizetransition
-  width: 100px
-  flex-basis: 100px
-  flex-grow: 0
-  flex-shrink: 0
   margin-left: $side-gutter
-  border-right: 1px dotted #888
 
-  @media (max-width: $cutoff)
-    width: 0px
-    display: none
-    border-right: none
-
-#right
-  @include sizetransition
-  flex-grow: 1
-  margin-left: $center-gutter
-  margin-right: $side-gutter
-  padding-right: 5px
+  li
+    margin-left: 20px
 
 
-#bottom-links
-  @include sizetransition
-  overflow: hidden
-  height: 0px
-  text-align: center
 
-  @media (max-width: $cutoff)
-    height: auto
-    border-top: 1px solid $header-color
-
-#right
   pre, code
     font-family: monospace
     margin-bottom: 20px
     border: 1px dashed green
-#right
-  ul
-    position: relative
-    left: 20px // hmmm
-    li
-      margin-top: 20px
 
-#side-links
+
+.blog li
   list-style-type: none
+  margin-bottom: 15px
+  margin-left: 0 !important
+  .title
+    font-size: 26px
+    font-weight: bold
+    display: block

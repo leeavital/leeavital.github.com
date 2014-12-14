@@ -2,6 +2,8 @@ github: http://github.com/leeavital/Clou.de
 
 title: ClouDE
 
+date: 8/16/2014
+
 body: |
   ClouDE is a project I worked on for a seminar on software tools in the spring
   of 2014. It is a Java IDE written in [Scala](http://en.wikipedia.org/wiki/Scala_(programming_language "Scala") that runs in a web browser.

@@ -1,7 +1,6 @@
 @font-face {
   font-family: roboto;
   src: url("fonts/roboto.ttf"); }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -10,12 +9,16 @@
 body {
   background-color: white; }
 
+a {
+  text-decoration: none;
+  color: #00E; }
+
 p {
   margin-bottom: 10px;
   text-align: justify; }
 
 #navigation {
-  background-color: #d8d8d8;
+  background-color: #D8D8D8;
   padding: 4px;
   transition: width 1s ease-in; }
   #navigation a {
@@ -29,49 +32,19 @@ p {
 
 #content {
   margin-top: 20px;
-  display: flex; }
+  margin-left: 2%; }
+  #content li {
+    margin-left: 20px; }
+  #content pre, #content code {
+    font-family: monospace;
+    margin-bottom: 20px;
+    border: 1px dashed green; }
 
-#left {
-  transition: width 1s ease-in;
-  width: 100px;
-  flex-basis: 100px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin-left: 2%;
-  border-right: 1px dotted #888888; }
-  @media (max-width: 500px) {
-    #left {
-      width: 0px;
-      display: none;
-      border-right: none; } }
-
-#right {
-  transition: width 1s ease-in;
-  flex-grow: 1;
-  margin-left: 1%;
-  margin-right: 2%;
-  padding-right: 5px; }
-
-#bottom-links {
-  transition: width 1s ease-in;
-  overflow: hidden;
-  height: 0px;
-  text-align: center; }
-  @media (max-width: 500px) {
-    #bottom-links {
-      height: auto;
-      border-top: 1px solid #d8d8d8; } }
-
-#right pre, #right code {
-  font-family: monospace;
-  margin-bottom: 20px;
-  border: 1px dashed green; }
-
-#right ul {
-  position: relative;
-  left: 20px; }
-  #right ul li {
-    margin-top: 20px; }
-
-#side-links {
-  list-style-type: none; }
+.blog li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  margin-left: 0 !important; }
+  .blog li .title {
+    font-size: 26px;
+    font-weight: bold;
+    display: block; }
