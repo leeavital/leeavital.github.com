@@ -1,4 +1,11 @@
 title: resume
 
 body: |
-   download my resume here <a>/resume/static/resume.pdf</a>
+
+  Download my resume.
+
+  - [pdf](/resume/static/resume.pdf)
+
+  - [txt](/resume/static/resume.txt)
+
+  - [html](/resume/static/resume.html)
