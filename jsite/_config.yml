@@ -1,0 +1,12 @@
+# Site settings
+title: Your awesome title
+email: leeavital@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  My blog.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://leeavital.com" # the base hostname & protocol for your site
+twitter_username: leeavital
+github_username:  leeavital
+
+# Build settings
+markdown: kramdown

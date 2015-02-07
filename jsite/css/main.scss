@@ -1,0 +1,77 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+
+$left-gutter: 20px;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+}
+
+h1 {
+font-size:  2em; 
+}
+
+
+li {
+  list-style-position: inside;
+}
+
+
+
+.nav-links {
+
+  background-color: #d8d8d8;
+  padding: 4px;
+  transition: width 1s ease-in;
+  li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 10px;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    &:first-child {
+      margin-left: $left-gutter;
+    }
+  }
+}
+
+
+.post-title {
+  margin-bottom: 20px;
+}
+
+.page-content {
+  margin-top: 20px;
+  margin-left: $left-gutter;
+}
+
+.post-list {
+  list-style-type: none;
+  a {
+
+  }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "syntax-highlighting"
+;
