@@ -6,12 +6,26 @@
 
 
 
+body {
+  display: flex;
+  flex-direction: column;
+
+  header {
+    flex-grow: 0;
+  }
+
+  .page-content {
+    flex-grow: 1;
+  }
+
+}
+
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 
-$left-gutter: 20px;
+$h-gutter: 20px;
 
 * {
   margin: 0;
@@ -21,14 +35,31 @@ $left-gutter: 20px;
 }
 
 h1 {
-font-size:  2em; 
+  font-size:  2em;
 }
 
+
+ul {
+  padding: 10px;
+}
 
 li {
-  list-style-position: inside;
+  margin-left: 10px;
 }
 
+p {
+  margin-top: 20px;
+}
+
+
+.highlight {
+  * {
+    font-family: monospace;
+  }
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px dashed green;
+}
 
 
 .nav-links {
@@ -47,23 +78,61 @@ li {
     }
 
     &:first-child {
-      margin-left: $left-gutter;
+      margin-left: $h-gutter;
     }
   }
 }
 
+.tag-list {
+  display: inline;
+  .post-tag {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 10%;
+    margin-left: 0px;
+  }
 
-.post-title {
+  @mixin tag($name, $bg, $text: black) {
+    .tag-#{$name} {
+      background-color: $bg;
+    }
+  }
+
+  @include tag(scala, teal);
+  @include tag(programming, cornflowerblue);
+  @include tag(javascript, darkolivegreen);
+  @include tag(D, crimson);
+  @include tag(erlang, turquoise);
+  @include tag(rant, orange);
+}
+
+.post-header {
   margin-bottom: 20px;
+
+  .post-timestamp {
+    color: #666;
+    font-size: 12px;
+  }
+
+
 }
 
 .page-content {
   margin-top: 20px;
-  margin-left: $left-gutter;
+  margin-left: $h-gutter;
+  margin-right: $h-gutter;
+
+  h2 {
+    margin-top: 15px;
+  }
 }
 
 .post-list {
   list-style-type: none;
+
+  padding: 0px;
+  li {
+  }
   a {
 
   }
