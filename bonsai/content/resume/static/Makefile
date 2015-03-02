@@ -1,12 +1,12 @@
-all: pdf txt html
+.PHONY all: resume.pdf txt html
 
-pdf: resume.tex
+resume.pdf: resume.tex
 	pdflatex resume.tex
 
-txt:
+resume.txt: resume.tex
 	hevea -text resume.tex
 
-html:
+resume.html: resume.tex
 	hevea resume.tex
 
 

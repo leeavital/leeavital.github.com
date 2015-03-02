@@ -11,8 +11,7 @@
    - Compiler Construction (spring 2014) 
    - Programming Language Theory (fall 2013) 
    - Aspect Oriented Programming (fall 2013) 
-   - Language, Technology and Society (spring 2013) 
-   - Acoustic Theory (spring 2013) 
+   - Language and Technology (spring 2013) 
   
   PORTFOLIO
    
@@ -43,6 +42,11 @@
    - LazyJSON A lazy JSON parser written in the D programming language.
   
   WORK EXPERIENCE
+  MLton Undergraduate Infrastructure Support January 2015 - Present
+Rochester Institute of Technology  
+    
+   - Refactor LLVM codegenerator for the MLton Standard ML compiler 
+  
   Engineer Intern August 2014 - December 2014
    Twitter Inc.  
     
@@ -57,7 +61,6 @@
     
    - Migrated infrastructure for processing charges from MySQL-based
    architecture to a Kafka-based architecture 
-   - Rewrote and tuned Oozie jobs to run faster and more frequently 
    - Built out monitoring infrastructure and a visualization tool 
   
   Developer Intern May 2013 - September 2013
@@ -73,8 +76,6 @@
    National Technical Institute for the Deaf at RIT, Rochester, NY
    
     
-   - Maintained and developed a course management system built on the
-   ASP Classic Platform 
    - Built a file repository applications for instructors and students
    to manage course content 
    - Maintained several legacy applications including an online sign
