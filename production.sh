@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 key=0
 host=0
 user=0
