@@ -38,6 +38,12 @@ h1 {
   font-size:  2em;
 }
 
+ul.separated-list {
+  li {
+    margin-bottom: 15px;
+  }
+}
+
 
 ul {
   padding: 10px;
@@ -101,9 +107,12 @@ p {
   @include tag(scala, teal);
   @include tag(programming, cornflowerblue);
   @include tag(javascript, darkolivegreen);
+  @include tag(PHP, purple);
   @include tag(D, crimson);
   @include tag(erlang, turquoise);
   @include tag(rant, orange);
+  @include tag(python, greenyellow);
+  @include tag(music, lightsalmon);
 }
 
 .post-header {
