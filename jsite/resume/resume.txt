@@ -4,27 +4,24 @@
   
   EDUCATION Rochester Institute of Technology
    B.S. in Computer Science, expected May 2015
-   	 Minor in Music and Technology
-   	 Dean's List: Fall 2011 - Present
+   Minor in Music and Technology
+   Dean's List: Fall 2011 - Present
   SPECIAL COURSEWORK  
     
    - Compiler Construction (spring 2014) 
    - Programming Language Theory (fall 2013) 
    - Aspect Oriented Programming (fall 2013) 
-   - Language, Technology and Society (spring 2013) 
-   - Acoustic Theory (spring 2013) 
+   - Language and Technology (spring 2013) 
   
   PORTFOLIO
    
     
    - Personal Website http://leeavital.com 
-   - Github	https://github.com/leeavital  
+   - Github https://github.com/leeavital  
   
   PROJECTS
    
    
- 
-   - ClouDE A rudimentary IDE written in Scala that runs in the browser.
  
    - LeadSheet A python application that reads a series of chords and
    generates a musical accompaniment in MIDI. Includes a front-end
@@ -45,6 +42,11 @@
    - LazyJSON A lazy JSON parser written in the D programming language.
   
   WORK EXPERIENCE
+  MLton Undergraduate Infrastructure Support January 2015 - Present
+Rochester Institute of Technology  
+    
+   - Refactor LLVM codegenerator for the MLton Standard ML compiler 
+  
   Engineer Intern August 2014 - December 2014
    Twitter Inc.  
     
@@ -52,7 +54,6 @@
    targeting 
    - Implemented the ability to preview tweets and cards for several
    platforms in the browser 
-   - Worked on several Finagle services written in Scala 
   
   Platform Intern, KPCB Engineering Fellow May 2014 - August 2014
    Drawbridge Inc.
@@ -60,9 +61,7 @@
     
    - Migrated infrastructure for processing charges from MySQL-based
    architecture to a Kafka-based architecture 
-   - Rewrote and tuned Oozie jobs to run faster and more frequently 
-   - Built out monitoring infrastructure and a visualization tool in
-   Scala 
+   - Built out monitoring infrastructure and a visualization tool 
   
   Developer Intern May 2013 - September 2013
    Massdrop Inc.  
@@ -78,9 +77,9 @@
    
     
    - Built a file repository applications for instructors and students
-   to manage course content 
-   - Maintained several legacy applications including an online sign
-   language dictionary 
+   to manage their course content 
+   - Maintained several legacy applications in ASP classic including an
+   online sign language dictionary 
   
    
 -----------------------------------------------------------------------

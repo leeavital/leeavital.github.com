@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.31)  7 FEB 2015 16:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.1.31)  3 MAR 2015 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -38,8 +38,7 @@ No auxiliary output files.
 \resumewidth=\dimen104
 \@columnwidth=\dimen105
 \c@numberofcolumns=\count87
-)
-No file resume.aux.
+) (./resume.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
@@ -52,14 +51,15 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+
 (/usr/local/texlive/2013basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
 
-Overfull \hbox (6.53311pt too wide) in paragraph at lines 68--72
+Overfull \hbox (6.53311pt too wide) in paragraph at lines 64--68
 []\OT1/cmr/bx/n/10 SNAP (Shared Names-pace Ap-pli-ca-tion Pro-gram-ming) \OT1/c
 mr/m/n/10 A PHP mi-croframe-
  []
@@ -68,9 +68,9 @@ mr/m/n/10 A PHP mi-croframe-
 
 {/usr/local/texlive/2013basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] ) 
 Here is how much of TeX's memory you used:
- 305 strings out of 494536
- 3381 string characters out of 6167446
- 56342 words of memory out of 5000000
+ 307 strings out of 494536
+ 3403 string characters out of 6167446
+ 55342 words of memory out of 5000000
  3634 multiletter control sequences out of 15000+600000
  4906 words of font info for 18 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
@@ -82,7 +82,7 @@ fb></usr/local/texlive/2013basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
 cmr10.pfb></usr/local/texlive/2013basic/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsl10.pfb></usr/local/texlive/2013basic/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb>
-Output written on resume.pdf (1 page, 70878 bytes).
+Output written on resume.pdf (1 page, 70999 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
