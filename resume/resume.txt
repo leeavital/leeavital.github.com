@@ -4,8 +4,8 @@
   
   EDUCATION Rochester Institute of Technology
    B.S. in Computer Science, expected May 2015
-   Minor in Music and Technology
-   Dean's List: Fall 2011 - Present
+   	 Minor in Music and Technology
+   	 Dean's List: Fall 2011 - Present
   SPECIAL COURSEWORK  
     
    - Compiler Construction (spring 2014) 
