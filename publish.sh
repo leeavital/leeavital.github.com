@@ -31,8 +31,8 @@ fi
 jekyll b
 
 
-# cp -r output/** ../ 
-rsync -r -i $key _site/ $user@$host:/var/www/html 
+# cp -r output/** ../
+scp -r -i $key _site/ $user@$host:/var/www/html
 
 
 # tar -cvf site.tar output/*
