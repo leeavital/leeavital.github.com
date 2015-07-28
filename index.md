@@ -4,8 +4,7 @@ title: Hello There
 img: headshot2.jpg
 ---
 
-Hi, my name is  **Lee Avital** and I'm a fourth year computer science
-student at the [Rochester Institute of Technology.](http://rit.edu "RIT")
+Hi, my name is  **Lee Avital**.
 I'm a software engineer at [Palantir.](https://www.palantir.com/)
 
 
