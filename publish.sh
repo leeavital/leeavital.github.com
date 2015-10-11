@@ -32,7 +32,7 @@ jekyll b
 
 
 # cp -r output/** ../
-scp -r -i $key _site/ $user@$host:/var/www/html
+cd _site && scp -r -i $key . $user@$host:/var/www/html
 
 
 # tar -cvf site.tar output/*

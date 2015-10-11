@@ -14,8 +14,8 @@ ASP Classic.
 
 Some of my experience:
 
-- I've worked as an engineer at [Twitter.](http://twitter.com)
-- I've worked at [Drawbridge](http://drawbrid.ge) as a platform engineer. Drawbridge
+- I've worked as an engineer intern at [Twitter.](http://twitter.com)
+- I've worked at [Drawbridge](http://drawbrid.ge) as a platform engineer intern. Drawbridge
 is a demand side platform for real-time ad-bidding.
 - I've worked at [Massdrop](http://massdrop.com "Massdrop") as an engineer. Massdrop is
  a platform that allows buyers to leverage their numbers and get better
