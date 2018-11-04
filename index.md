@@ -4,8 +4,8 @@ title: Hello There
 img: headshot2.jpg
 ---
 
-Hi, my name is  **Lee Avital**.
-I'm a software engineer at [Palantir.](https://www.palantir.com/)
+Hi, my name is  **Lee Avital**.  I'm a software engineer at
+[DataDog](https://datadoghq.com).
 
 
 I've done a lot of work in **web development** &mdash; writing
@@ -14,16 +14,15 @@ ASP Classic.
 
 Some of my experience:
 
-- I've worked as an engineer intern at [Twitter.](http://twitter.com)
-- I've worked at [Drawbridge](http://drawbrid.ge) as a platform engineer intern. Drawbridge
-is a demand side platform for real-time ad-bidding.
-- I've worked at [Massdrop](http://massdrop.com "Massdrop") as an engineer. Massdrop is
- a platform that allows buyers to leverage their numbers and get better
- prices on the products they want.
+- I was a software engineer at [Palantir](https://palantir.com).
+- I was an engineer intern at [Twitter](http://twitter.com).
+- I was a platform engineer intern at [Drawbridge](http://drawbrid.ge), a demand side platform for real-time ad-bidding.
+- I was a engineer intern at [Massdrop](http://massdrop.com) as an engineer.
+  Massdrop is a platform that allows buyers to leverage their numbers and get
+  better prices on the products they want.
 - I've worked as a web developer at the [National Technical Institute for the Deaf](http://ntid.rit.edu "NTID")
 working on web-based  tools to enhance the classroom experience for both hearing and
 non-hearing students.
-
 
 
 I'm very interested in programming languages. Right now, my language of choice
