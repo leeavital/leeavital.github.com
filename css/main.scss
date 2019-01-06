@@ -33,6 +33,10 @@ $h-gutter: 20px;
   font-family: $base-font-family;
 }
 
+article {
+  width: 50em;
+}
+
 p {
   font-size: $base-font-size;
   line-height: 1.5;
@@ -133,8 +137,6 @@ pre.highlight {
     color: #666;
     text-decoration: none;
   }
-
-
 }
 
 .page-content {
