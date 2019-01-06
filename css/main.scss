@@ -35,6 +35,7 @@ $h-gutter: 20px;
 
 p {
   font-size: $base-font-size;
+  line-height: 1.5;
 }
 
 h1 {
@@ -61,7 +62,7 @@ p {
 }
 
 
-.highlight {
+pre.highlight {
   * {
     font-family: monospace;
   }
@@ -141,7 +142,7 @@ p {
   margin-left: $h-gutter;
   margin-right: $h-gutter;
 
-  h2 {
+  h2, h3 {
     margin-top: 15px;
   }
 }
