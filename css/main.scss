@@ -34,7 +34,8 @@ $h-gutter: 20px;
 }
 
 article {
-  width: 50em;
+  max-width: 50em;
+  min-width: 100%;
 }
 
 p {
