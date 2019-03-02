@@ -34,8 +34,8 @@ $h-gutter: 20px;
 }
 
 article {
-  max-width: 50em;
-  min-width: 100%;
+  width: 50em;
+  max-width: 100%;
 }
 
 p {
@@ -163,6 +163,10 @@ pre.highlight {
 
 code {
   font-family: "Courier New";
+}
+
+pre {
+  overflow-x: scroll;
 }
 
 
