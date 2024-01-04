@@ -7,7 +7,7 @@ tags: hardware
 ---
 
 The Volumetric Display was a project I worked on with the several members
-of RIT's <a href="http://sse.se.rit.edu">Society For Software Engineers</a>
+of RIT's <a href="https://sse.rit.edu/">Society For Software Engineers</a>
 and <a href="http://cias.rit.edu">College of Imaging Science</a>
 
 It consists of a spinning mirror and a projector that displays one of 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 key=0
 host=0
@@ -33,7 +33,7 @@ jekyll b
 
 # cp -r output/** ../
 set -x
-cd _site && scp -r -i $key . $user@$host:/var/www/html
+scp -r -i $key $(pwd)/_site $user@$host:/var/www/html
 
 # tar -cvf site.tar output/*
 # mv site.tar ../
