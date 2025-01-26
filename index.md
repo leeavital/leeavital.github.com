@@ -4,13 +4,8 @@ title: Hello There
 img: headshot2.jpg
 ---
 
-Hi, my name is  **Lee Avital**.  I'm a software engineer at
-[DataDog](https://datadoghq.com).
-
-
-I've done a lot of work in **web development** &mdash; writing
-large javascript applications with backends in Scala, PHP, and
-ASP Classic.
+Hi, my name is  **Lee Avital**.  Right now I'm an engineer manager at 
+[DataDog](https://datadoghq.com) where I build stuff for Network Engineers and SREs.
 
 Some of my experience:
 
@@ -24,9 +19,6 @@ Some of my experience:
 working on web-based  tools to enhance the classroom experience for both hearing and
 non-hearing students.
 
-
-I'm very interested in programming languages. Right now, my language of choice
-is [Scala](https://en.wikipedia.org/wiki/Scala_(programming_language "Scala"), a
-strongly typed, functional programming language that runs on the JVM.
+I'm interested in programming languages, performance, and developer tools.
 
 You can read all about that on [my blog.](/blog)
