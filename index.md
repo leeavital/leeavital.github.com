@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello There
-img: headshot2.jpg
+img: headshot2.png
 ---
 
 Hi, my name is  **Lee Avital**.  Right now I'm an engineer manager at 

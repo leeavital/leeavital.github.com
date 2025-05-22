@@ -1,82 +1,44 @@
 \documentclass[line,margin]{res}
 
-\let\olditemize\itemize
-\renewcommand{\itemize}{
-  \olditemize
-  \setlength{\itemsep}{-2pt}
-}
-
-
+\usepackage{hyperref}
 
 %padding and margins
-\voffset=0in
-\oddsidemargin=0pt
-\headheight=0pt
-\topmargin=0in
-\headsep=0in
-\textheight=10in
+% \voffset=0in
+% \oddsidemargin=0pt
+% \headheight=0pt
+% \topmargin=0in
+% \headsep=0in
+% \textheight=10in
 
 
 \begin{document}
 
-\name{Lee J. Avital}
-\address{leeavital@gmail.com}
+Lee J. Avital \hfill  \hfill leeavital@gmail.com \\
+% TODO
+\null \hfill \url{leeavital.com} \url{github.com/leeavital}
 
-\begin{resume}
+\hrulefill
 
-\section{WORK EXPERIENCE}
+Work Experience % TODO: bold or something?
 
-{\bf Datadog} \hfill October 2018 - Present \\
-\begin{itemize}
-  \item \textit{October 2022 - Present, Engineering Manager} managed a group of 14, responsible for both Datadog's datacenter and cloud focussed network monitoring products.
-  \item \textit{January 2019 - October 2022, Engineering Team Lead} led a team of four to ten engineers responsible for Datadog's Network Performance Monitoring product.
-  \item \textit{October 2018 - January 2019, Software Engineer} part of a team building the first version of Datadog's Network Performance Monitoring product. I was responsible for building and operating a realtime pipeline for ingesting and enriching high cardinality network metadata from tens of thousands of hosts.
-\end{itemize}
+\hrulefill
 
-{\bf Palantir Technologies} \hfill June 2015 - October 2018 \\
-Software Engineer
-\begin{itemize}
-\item Part of a team which built the first version of Palantir Apollo -- a continuous delivery system that managed upgrades for thousands of service installations across hundreds of isolated customer cloud environments.
-\item Backend developer on a distributed registry that provided organization, search, and access control for datasets and analyses within the Palantir Foundry ecosystem. I implemented the authorization framework and search.
-\item Backend developer on a federated authentication and authorization service used widely across the company.
-\end{itemize}
-
-% {\bf  Rochester Institute of Technology} \hfill January 2015 - May 2015 \\
-% MLton Undergraduate Infrastructure Support
-% \begin{itemize}
-% \item Instrumented the LLVM backend of the MLton Standard ML compiler to look for bugs.
-% \end{itemize}
-
-{\bf Twitter} \hfill August 2014 - December 2014 \\
-Software Engineer Intern
-\begin{itemize}
-\item Implemented web previews for iOS and Android ads to improve the experience of users setting up mobile ad campaigns.
-\item Implemented endpoints and database infrastructure for a new type of ad campaign.
-\end{itemize}
-
-{\bf Drawbridge} \hfill May 2014 - August 2014 \\
-Platform Intern, KPCB Engineering Fellow
-\begin{itemize}
-\item Developed a prototype for moving payments processing away from a monolithic batch involving MySQL to a more scalable Kafka approach.
-\item Built an internal tool for monitoring application-level metrics.
-\end{itemize}
-
-{\bf Massdrop Inc.} \hfill May 2013 - September 2013\\
-Engineer Intern, Full Stack
-
-{\bf  National Technical Institute for the Deaf at RIT} \hfill May 2012 - May 2013\\
-Web Applications Programmer, Full Stack
-
-\section{PORTFOLIO}
-
-\begin{itemize}
-\item {\bf Personal Website}  {\sl http://leeavital.com}
-\item {\bf Github} {\sl  https://github.com/leeavital }
-\end{itemize}
+\begin{tabular}{p{0.35\linewidth} p{0.6\linewidth}}
 
 
-\section{EDUCATION}   Rochester Institute of Technology \\
-                      B.S. in  Computer Science,  Minor in Music and Technology, May 2015 \\
+Datadog \\
+Senior Engineering Manager \\
+2023 - 2025 
+& At Datadog, I was a founding engineer of the Network Monitoring product suite. Network Monitoring allows network operators and SREs to understand how traffic flows across their network as well as the health of individual network components. After working as an IC on the team for a year, I stepped into a management role, and continue to lead the engineering team today.
+I managed a group of 20+ engineers working across web frontends, streaming pipelines, and kernel level programming.  I handled hiring, people management, technical architecture, and roadmapping while continuing to review and author code.
+I was the owner of Cloud Network Monitoring during a period of growth, where I helped scale from zero to hundreds of thousands of installed hosts and thousands of paying customers. In doing so, I solved numerous performance and distributed systems problems.
+I worked closely with customers, product management, and engineers to define requirements and early architecture of an SNMP profile editor, and highly available SNMP collector, both of which were hard requirements to close several six figure deals.
+I was part of a company wide on-call rotation that managed complex, multi-team outages.
+Technologies: Go, Kafka, Cassandra, Kubernetes, eBPF, C, Linux, SNMP, Elasticsearch, Datadog \\
 
-\end{resume}
+  Foo & Bar
+
+\end{tabular}
+
+Hello
 \end{document}
